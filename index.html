@@ -1,0 +1,231 @@
+                <meta charset="utf-8" emacsmode="-*- markdown -*-">
+                       **CS888: Advanced Ray Tracing Seminar**
+
+![Denoising an image produced by Monte Carlo path tracing using the method of [Vogels et al. 2018](http://drz.disneyresearch.com/~jnovak/publications/KPAL/KPAL.pdf)](denoising.jpg)
+
+**Instructors**: [Morgan McGuire](https://casual-effects.com), [Craig Kaplan](http://www.cgl.uwaterloo.ca/csk/), [Stephen Mann](http://www.cgl.uwaterloo.ca/smann/)
+
+
+This is a seminar course with a majority of the lecture time devoted
+to student-led presentations. In each session, a student will present
+and critique one or two assigned papers related to the term's
+topic. They will discuss the paper or papers, and offer their own
+thoughts about what could have been done differently and how the work
+could be extended. The rest of the students are expected to read the
+papers, attend the presentations, and participate in the following
+discussion. Students who take the course for credit are also expected
+to complete a small project at the end of the term.
+
+Topics covered:
+
+- Monte Carlo Integration
+- Markov Chain Monte Carlo
+- Bounding Volume Hierarchies
+- Parallel Ray Tracing
+- Quasi-Monte Carlo and Low-Discrepancy Patterns
+- Photon Mapping
+- Path Tracing
+- Metropolis Light Transport
+- Participating Media
+- Image Reconstruction (Denoising)
+
+
+
+Student Reponsibilities
+===============================================================================
+
+Background
+-------------------------------------------------------------------------------
+
+- Intro graphics through Whitted ray tracing (CS488/688)
+- Derivative and integral calculus (MATH138)
+- Probability (STAT230)
+
+
+
+Audit
+-------------------------------------------------------------------------------
+
+Students who wish to audit the course must:
+
+- Read all assigned papers
+- For each paper, write a one-paragraph summary distinguishing that paper from previous work
+- Attend all lectures
+- Participate in discussions
+- Present one seminar
+
+
+Credit
+-------------------------------------------------------------------------------
+
+Students who take the course for credit must complete all the above
+work as well as complete a programming project at the end of the
+term. 
+
+Marks will be assigned as follows:
+
+- Participation (including attendance and weekly paragraphs): 20%
+- Warmup programming project (Path Tracing): 10%
+- Seminar presentation and lecture notes: 30%
+- Project (including written report): 35%
+
+
+Schedule
+===============================================================================
+
+Path Tracing
+-------------------------------------------------------------------------------
+
+At the beginning of the course, we'll present one or two lectures
+reviewing ray tracing and the rendering equation, and introducing
+importance sampling, Monte Carlo, and path tracing. These will use the
+Graphics Codex for supplemental reading and cover the material for the
+warmup programming project of implementing a naive pure path
+tracer. 
+
+We will also discuss strategies for reading technical papers in
+computer graphics and how you should present and critique such work.
+The remaining lectures will be by students in accordance with these
+guidelines.
+
+
+Papers
+-------------------------------------------------------------------------------
+
+We will read a subset of these papers, driven by enrolment and student preferences.
+
+
+1. Path tracing:
+  + [The rendering equation](https://dl.acm.org/citation.cfm?id=15902), Kajiya, SIGGRAPH'86
+  - [Bidirectional estimators for light transport](http://graphics.stanford.edu/papers/bidir/), Veach and Guibas, EGSR'94
+  - [A radiosity method for non-diffuse environments](https://www.researchgate.net/publication/220720201_A_Radiosity_Method_for_Non-Diffuse_Environments), Immel et al., SIGGRAPH'86
+1. Materials:
+  - [Microfacet models for refraction through rough surfaces](.), Walter et al., EGSR'07
+  - TBD
+  + [Physically-based shading at Disney](https://disney-animation.s3.amazonaws.com/library/s2012_pbs_disney_brdf_notes_v2.pdf), Burley, SIGGRAPH'12 Courses
+1. Re-using paths:
+  + [Instant radiosity](https://dl.acm.org/citation.cfm?id=258769), Keller, SIGGRAPH'97
+  + [Global illumination using photon maps](http://graphics.ucsd.edu/~henrik/papers/photon_map/), Jensen, EGSR'96
+1. Optimal MCMC:
+  + [Metropolis light transport](https://dl.acm.org/citation.cfm?id=258775), Veach and Guibas, SIGGRAPH'97
+  - [Fusing State Spaces for Markov Chain Monte Carlo Rendering](https://dl.acm.org/citation.cfm?id=3073691), Otsu et al., SIGGRAPH'17
+  - [Charted Metropolis Light Transport](https://dl.acm.org/citation.cfm?id=3073677), Pantaleoni, SIGGRAPH'17
+  - [Neural importance sampling](http://drz.disneyresearch.com/~jnovak/publications/NIS/index.html), Müller et al., SIGGRAPH'19
+  - [Optimal multiple importance sampling](https://graphics.cg.uni-saarland.de/publications/kondapaneni-2019-siggraph-optimal-mis.html), Kondapaneni et al., SIGGRAPH'19
+1. Sampling:
+  - [Sampling the GGX distribution of visible normals](http://jcgt.org/published/0007/04/01/), Heitz, JCGT'18
+  - [A low-discrepancy sampler that distributes Monte Carlo errors as blue noise in screen space](.), Heitz et al., EGSR'19
+  - [Analysis of Sample Correlations for Monte Carlo Rendering](https://pdfs.semanticscholar.org/59bc/d7a48ea034236391c71acdd2cd749b3da485.pdf), Singh et al., Eurographics'19
+1. Volumes:
+  - [Gradient-domain volumetric photon density estimation](https://dl.acm.org/citation.cfm?id=3201363), Gruson et al., Transactions on Graphics 2018
+  - [Multi-scale modeling and rendering of granular materials](https://dl.acm.org/citation.cfm?id=2766949E), Meng et al., SIGGRAPH'15
+  - [Deep scattering: rendering atmospheric clouds with radiance-predicting neural networks](https://dl.acm.org/citation.cfm?id=3130880), Kallweit et al., SIGGRAPH'17
+1. Denoising:
+  - [Denoising with kernel prediction and asymmetric loss functions](https://dl.acm.org/citation.cfm?id=3201388), Vogels et al., SIGGRAPH'18
+  - [Sample-based Monte Carlo Denoising using a Kernel-Splatting Network](https://groups.csail.mit.edu/graphics/rendernet/), Gharbi et al., SIGGRAPH'19
+  - [Texture space caching and reconstruction for ray tracing](https://dl.acm.org/citation.cfm?id=2982407), Munkberg et al., Transactions on Graphics 2016
+  - [On Filtering the Noise from the Random Parameters in Monte Carlo Rendering](https://dl.acm.org/citation.cfm?id=2167083), Sen and Darabi, SIGGRAPH'12
+1. Scheduling:
+  - [OptiX: A General Purpose Ray Tracing Engine](https://research.nvidia.com/publication/optix-general-purpose-ray-tracing-engine), Parker et al., SIGGRAPH'10
+  - [GPU Ray Tracing](https://dl.acm.org/citation.cfm?id=2447976.2447997&coll=portal&dl=ACM), Parker et al., Communications of the ACM 2013
+1. Traversal:
+  - [Embree: A Kernel Framework for Efficient CPU Ray Tracing](https://dl.acm.org/citation.cfm?doid=2601097.2601199), Wald et al., Transactions on Graphics 2014
+  - [Wide BVH Traversal with a Short Stack](.), Vaidyanathan et al., HPG'19
+  - [Dual split trees](http://www.cemyuksel.com/research/papers/dualsplittrees_i3d2019.pdf), Lin et al., I3D'19
+1. Production I:
+  + [Sony Pictures Imageworks Arnold](.), Kulla et al., Transactions on Graphics 2018
+  - [The Design and Evolution of Disney's Hyperion Renderer](.), Burley et al., Transactions on Graphics 2018
+  - [Manuka: A batch-shading architecture for spectral path tracing in movie production](https://jo.dreggn.org/home/2018_manuka.pdf), Fascione et al., Transactions on Graphics 2018 
+1. Production II:
+  - [Arnold: A Brute-Force Production Path Tracer](.), Georgiev et al., Transactions on Graphics 2018
+  - [RenderMan: An Advanced Path-Tracing Architecture for Movie Rendering](.), Christensen et al., Transactions on Graphics 2018 
+
+⭑ Must be among the papers presented on this day
+
+Projects
+===============================================================================
+
+Warmup
+-------------------------------------------------------------------------------
+
+The warmpup project is implementing a naive pure path tracer from in
+your preferred programming environment. You must implement the path
+tracing main loop, reflection and refraction, at least cosine-based
+importance sampling, and gamma encoding. 
+
+Render images of the Cornell Box (the classic version with the mirror
+box in it) and one other scene showing glossy reflection, such as the
+version Sponza with the glossy floor. Submit a two-page "report"
+comprising solely of your images and the core implementationof the
+algorithm, which should be about 100 lines of code.
+
+You are not expected to implement your own BVH, tone mapping, point
+lights, light importance sampling, low-discrepancy sampling, full BSDF
+importance sampling, denoising, etc. There are no expectations for
+performance.
+
+You may use a ray-triangle intersection library such as Embree, OptiX,
+RadeonRays, VKRT, or DXR. You may use a asset-loading libraries such
+as tinyOBJ, AssIMP, FreeImage, etc.  I recommend using
+[G3D](https://casual-effects.com/g3d), which provides the `G3D::Scene`
+loader and `G3D::TriTree` as simple C++ interface to Embree and OptiX.
+
+The purposes of the warmup are to build your intuition for the Monte
+Carlo aspects of the papers we will read and ensure that you have
+experience with some software tools that you might use for the final
+project. We recommend against using something like Shadertoy for the
+warmup because this will not put you in a good position for a more
+significant project later (although it is certainly a fun exercise to
+write a single-shader path tracer!).
+
+
+Final
+-------------------------------------------------------------------------------
+
+The final programming project will involve implementing a well-known
+rendering algorithm of the student's choice. Most students will work
+individually, but I will consider proposals for pair projects based on
+the topic and implementation plan.
+
+The deliverables for the programming project are:
+
+- A three-page report summarizing the project, in a specific format
+- Visual results (included in the report) demonstrating:
+  - Correctness (or lack thereof) in simple, reproducible contexts
+  - Artistic images demonstrating the visual impact
+  - Experimental results comparing to the paper
+- Supplemental material of code demonstrating the core of the technique. This should
+  not include all of the dependencies or necessarilly be compilable on its own.
+- A 5-10 minute presentation in class comprising a _brief_ discussion of
+  the core mathematical idea and then results
+
+I recommend that you begin the project about half way through the
+term.  Projects generally should not be "from scratch" and should
+instead build on some existing rendering framework that handles
+low-level asset loading, ray-triangle intersection, and materials,
+such as:
+
+- [G3D](https://casual-effects.com/g3d/)
+- [PBRT](https://github.com/mmp/pbrt-v3)
+- [Mitsuba](https://www.mitsuba-renderer.org/)
+- [Falcor](https://developer.nvidia.com/falcor)
+
+
+<div class="logo-bar">
+<a class="logo" href="https://uwaterloo.ca/"> </a>
+</div>
+
+<style>.md li.plus {
+list-style: none}
+.md li.plus:before {
+  content: "\2B51";
+  margin-left: -19px;
+  padding-right: 3px;
+}
+
+div.logo-bar { background: #000; position: absolute; top: 0px; left: 0px; right: 0px; text-align: center; border-bottom: 6px solid #E41740; }
+a.logo { display: inline-block; border: 1px solid #000; width:200px; height: 60px; background: url(https://cs.uwaterloo.ca/computer-science/profiles/uw_base_profile/themes/uw_fdsu_theme_resp/images/rwd/uwaterloo-logo.svg) 0 50% no-repeat; }
+.md div.title { margin-top: 100px }
+</style>
+<script>markdeepOptions = {tocStyle:'short'}</script>
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
