@@ -98,50 +98,68 @@ Papers
 We will read a subset of these papers, driven by enrolment and student preferences.
 
 
-1. Path tracing:
-  + [The rendering equation](https://dl.acm.org/citation.cfm?id=15902), Kajiya, SIGGRAPH'86
-  - [Bidirectional estimators for light transport](http://graphics.stanford.edu/papers/bidir/), Veach and Guibas, EGSR'94
-  - [A radiosity method for non-diffuse environments](https://www.researchgate.net/publication/220720201_A_Radiosity_Method_for_Non-Diffuse_Environments), Immel et al., SIGGRAPH'86
-1. Materials:
-  - [Microfacet models for refraction through rough surfaces](.), Walter et al., EGSR'07
-  - TBD
-  + [Physically-based shading at Disney](https://disney-animation.s3.amazonaws.com/library/s2012_pbs_disney_brdf_notes_v2.pdf), Burley, SIGGRAPH'12 Courses
-1. Re-using paths:
+1. Sep 6, *Path tracing*:
+  + Lecture: 
+    - How to read, critique, and present research papers (McGuire and Mann) 
+    - Path tracing (McGuire)
+  + Required reading (before or after class): 
+    - "Numerical Calculus" and "Path Tracing" chapters in the [Graphics Codex](http://graphicscodex.com), version 2.17
+    - [The rendering equation](https://dl.acm.org/citation.cfm?id=15902), Kajiya, SIGGRAPH'86
+  - (Out: ½ Mann, Kaplan)
+  - Further optional reading:
+    - [Bidirectional estimators for light transport](http://graphics.stanford.edu/papers/bidir/), Veach and Guibas, EGSR'94
+    - [A radiosity method for non-diffuse environments](https://www.researchgate.net/publication/220720201_A_Radiosity_Method_for_Non-Diffuse_Environments), Immel et al., SIGGRAPH'86
+1. Sep 13, *Materials*:
+  + Lecture: Efficient parallel Monte Carlo (McGuire)
+  + First student presentation: [Physically-based shading at Disney](https://disney-animation.s3.amazonaws.com/library/s2012_pbs_disney_brdf_notes_v2.pdf), Burley, SIGGRAPH'12 Courses
+  + Required reading: 
+    - TBD chapters in the [Graphics Codex](http://graphicscodex.com), version 2.17
+  - Recommended reading:
+    - "Materials" chapter in the [Graphics Codex](http://graphicscodex.com), version 2.17
+    - [Microfacet models for refraction through rough surfaces](https://www.cs.cornell.edu/~srm/publications/EGSR07-btdf.html), Walter et al., EGSR'07
+  - (Out: ½ Kaplan)
+1. Sep 20, *Re-using paths*:
   + [Instant radiosity](https://dl.acm.org/citation.cfm?id=258769), Keller, SIGGRAPH'97
   + [Global illumination using photon maps](http://graphics.ucsd.edu/~henrik/papers/photon_map/), Jensen, EGSR'96
-1. Optimal MCMC:
+  - Recommended reading:
+    - "Rendering Algorithms" chapter in the [Graphics Codex](http://graphicscodex.com), version 2.17
+  - Warmup path tracer due
+1. Sep 27, *Optimal MCMC*:
   + [Metropolis light transport](https://dl.acm.org/citation.cfm?id=258775), Veach and Guibas, SIGGRAPH'97
   - [Fusing State Spaces for Markov Chain Monte Carlo Rendering](https://dl.acm.org/citation.cfm?id=3073691), Otsu et al., SIGGRAPH'17
   - [Charted Metropolis Light Transport](https://dl.acm.org/citation.cfm?id=3073677), Pantaleoni, SIGGRAPH'17
   - [Neural importance sampling](http://drz.disneyresearch.com/~jnovak/publications/NIS/index.html), Müller et al., SIGGRAPH'19
   - [Optimal multiple importance sampling](https://graphics.cg.uni-saarland.de/publications/kondapaneni-2019-siggraph-optimal-mis.html), Kondapaneni et al., SIGGRAPH'19
-1. Sampling:
+1. Oct 4, *Sampling*:
   - [Sampling the GGX distribution of visible normals](http://jcgt.org/published/0007/04/01/), Heitz, JCGT'18
   - [A low-discrepancy sampler that distributes Monte Carlo errors as blue noise in screen space](.), Heitz et al., EGSR'19
   - [Analysis of Sample Correlations for Monte Carlo Rendering](https://pdfs.semanticscholar.org/59bc/d7a48ea034236391c71acdd2cd749b3da485.pdf), Singh et al., Eurographics'19
-1. Volumes:
+  - (Out: Kaplan)
+1. Oct 11, *Volumes*:
   - [Gradient-domain volumetric photon density estimation](https://dl.acm.org/citation.cfm?id=3201363), Gruson et al., Transactions on Graphics 2018
   - [Multi-scale modeling and rendering of granular materials](https://dl.acm.org/citation.cfm?id=2766949E), Meng et al., SIGGRAPH'15
   - [Deep scattering: rendering atmospheric clouds with radiance-predicting neural networks](https://dl.acm.org/citation.cfm?id=3130880), Kallweit et al., SIGGRAPH'17
-1. Denoising:
+1. Oct 25, *Denoising*:
   - [Denoising with kernel prediction and asymmetric loss functions](https://dl.acm.org/citation.cfm?id=3201388), Vogels et al., SIGGRAPH'18
   - [Sample-based Monte Carlo Denoising using a Kernel-Splatting Network](https://groups.csail.mit.edu/graphics/rendernet/), Gharbi et al., SIGGRAPH'19
   - [Texture space caching and reconstruction for ray tracing](https://dl.acm.org/citation.cfm?id=2982407), Munkberg et al., Transactions on Graphics 2016
   - [On Filtering the Noise from the Random Parameters in Monte Carlo Rendering](https://dl.acm.org/citation.cfm?id=2167083), Sen and Darabi, SIGGRAPH'12
-1. Scheduling:
+1. Oct 1, *Scheduling*:
   - [OptiX: A General Purpose Ray Tracing Engine](https://research.nvidia.com/publication/optix-general-purpose-ray-tracing-engine), Parker et al., SIGGRAPH'10
   - [GPU Ray Tracing](https://dl.acm.org/citation.cfm?id=2447976.2447997&coll=portal&dl=ACM), Parker et al., Communications of the ACM 2013
-1. Traversal:
+1. Nov 8, *Traversal*:
   - [Embree: A Kernel Framework for Efficient CPU Ray Tracing](https://dl.acm.org/citation.cfm?doid=2601097.2601199), Wald et al., Transactions on Graphics 2014
   - [Wide BVH Traversal with a Short Stack](.), Vaidyanathan et al., HPG'19
   - [Dual split trees](http://www.cemyuksel.com/research/papers/dualsplittrees_i3d2019.pdf), Lin et al., I3D'19
-1. Production I:
+1. Nov 15, *Production I*:
   + [Sony Pictures Imageworks Arnold](.), Kulla et al., Transactions on Graphics 2018
   - [The Design and Evolution of Disney's Hyperion Renderer](.), Burley et al., Transactions on Graphics 2018
   - [Manuka: A batch-shading architecture for spectral path tracing in movie production](https://jo.dreggn.org/home/2018_manuka.pdf), Fascione et al., Transactions on Graphics 2018 
-1. Production II:
+1. Nov 22, *Production II*:
   - [Arnold: A Brute-Force Production Path Tracer](.), Georgiev et al., Transactions on Graphics 2018
   - [RenderMan: An Advanced Path-Tracing Architecture for Movie Rendering](.), Christensen et al., Transactions on Graphics 2018 
+1. Nov 29, *Project Presentations*
+  - Final projects due
 
 ⭑ Must be among the papers presented on this day
 
@@ -225,6 +243,8 @@ list-style: none}
   margin-left: -19px;
   padding-right: 3px;
 }
+
+.md em.asterisk { font-weight: bold; font-style: normal;}
 
 div.logo-bar { background: #000; position: absolute; top: 0px; left: 0px; right: 0px; text-align: center; border-bottom: 6px solid #E41740; }
 a.logo { display: inline-block; border: 1px solid #000; width:200px; height: 60px; background: url(https://cs.uwaterloo.ca/computer-science/profiles/uw_base_profile/themes/uw_fdsu_theme_resp/images/rwd/uwaterloo-logo.svg) 0 50% no-repeat; }
