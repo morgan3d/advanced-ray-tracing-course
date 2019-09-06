@@ -114,8 +114,8 @@ mid-September.</small>
     - How to present a research paper [[PPT](present-research.pptx)|[PDF](present-research.pdf)]
     - Sign up for presentation dates
     - Global illumination, Monte Carlo, and path tracing review [[PPT](path-tracing-review.pptx)|[PDF](path-tracing-review.pdf)]
-    - Example importance sampling pure path tracer [C++](https://casual-effects.com/g3d/G3D10/samples/simplePathTracer/main.cpp)
-  + Required reading (after class):
+    - Example importance sampling pure path tracer [[C++](https://casual-effects.com/g3d/G3D10/samples/simplePathTracer/main.cpp)]
+  + Required reading (after class, no summary paragraph required):
     - "Numerical Calculus" and "Path Tracing" chapters in the [Graphics Codex](http://graphicscodex.com), version 2.17
     - [The rendering equation](https://dl.acm.org/citation.cfm?id=15902), Kajiya, SIGGRAPH'86
   - Further optional reading:
@@ -124,14 +124,15 @@ mid-September.</small>
   - (Out: ½ Mann, Kaplan)
 1. Sep 13, *Materials*:
   + Lecture: Efficient parallel Monte Carlo (McGuire)
-  + First student presentation: [Physically-based shading at Disney](https://disney-animation.s3.amazonaws.com/library/s2012_pbs_disney_brdf_notes_v2.pdf), Burley, SIGGRAPH'12 Courses
+  + (Andrew Na) [Physically-based shading at Disney](https://disney-animation.s3.amazonaws.com/library/s2012_pbs_disney_brdf_notes_v2.pdf), Burley, SIGGRAPH'12 Courses
+  - Sign ups for a _second_ presentation
   + Required reading: 
     - TBD chapters in the [Graphics Codex](http://graphicscodex.com), version 2.17
   - Recommended reading:
     - "Materials" chapter in the [Graphics Codex](http://graphicscodex.com), version 2.17
     - [Microfacet models for refraction through rough surfaces](https://www.cs.cornell.edu/~srm/publications/EGSR07-btdf.html), Walter et al., EGSR'07
   - (Out: ½ Kaplan)
-1. Sep 20, *Re-using paths*:
+1. Sep 20, *Re-using paths*: (Zeran Lu) 
   + [Instant radiosity](https://dl.acm.org/citation.cfm?id=258769), Keller, SIGGRAPH'97
   + [Global illumination using photon maps](http://graphics.ucsd.edu/~henrik/papers/photon_map/), Jensen, EGSR'96
   - Recommended reading:
@@ -143,32 +144,32 @@ mid-September.</small>
   - [Analysis of Sample Correlations for Monte Carlo Rendering](https://pdfs.semanticscholar.org/59bc/d7a48ea034236391c71acdd2cd749b3da485.pdf), Singh et al., Eurographics'19
   - (Out: McGuire)
 1. Oct 4, *Optimal MCMC*:
-  + [Metropolis light transport](https://dl.acm.org/citation.cfm?id=258775), Veach and Guibas, SIGGRAPH'97
+  + (Simeon Krastnikov) [Metropolis light transport](https://dl.acm.org/citation.cfm?id=258775), Veach and Guibas, SIGGRAPH'97
   - [Fusing State Spaces for Markov Chain Monte Carlo Rendering](https://dl.acm.org/citation.cfm?id=3073691), Otsu et al., SIGGRAPH'17
   - [Charted Metropolis Light Transport](https://dl.acm.org/citation.cfm?id=3073677), Pantaleoni, SIGGRAPH'17
   - [Neural importance sampling](http://drz.disneyresearch.com/~jnovak/publications/NIS/index.html), Müller et al., SIGGRAPH'19
   - [Optimal multiple importance sampling](https://graphics.cg.uni-saarland.de/publications/kondapaneni-2019-siggraph-optimal-mis.html), Kondapaneni et al., SIGGRAPH'19
   - (Out: Kaplan)
 1. Oct 11, *Volumes*:
-  - [Gradient-domain volumetric photon density estimation](https://dl.acm.org/citation.cfm?id=3201363), Gruson et al., Transactions on Graphics 2018
-  - [Multi-scale modeling and rendering of granular materials](https://cs.dartmouth.edu/~wjarosz/publications/meng15granular.html), Meng et al., SIGGRAPH'15
+  - (Sina Nabizadeh) [Gradient-domain volumetric photon density estimation](https://dl.acm.org/citation.cfm?id=3201363), Gruson et al., Transactions on Graphics 2018
+  - (Allen Yeh) [Multi-scale modeling and rendering of granular materials](https://cs.dartmouth.edu/~wjarosz/publications/meng15granular.html), Meng et al., SIGGRAPH'15
   - [Deep scattering: rendering atmospheric clouds with radiance-predicting neural networks](https://dl.acm.org/citation.cfm?id=3130880), Kallweit et al., SIGGRAPH'17
-1. Oct 25, *Denoising*:
+1. Oct 25, *Denoising*: (Andrew Tinits and Qingnan Duan)
   - [Denoising with kernel prediction and asymmetric loss functions](https://dl.acm.org/citation.cfm?id=3201388), Vogels et al., SIGGRAPH'18
   - [Sample-based Monte Carlo Denoising using a Kernel-Splatting Network](https://groups.csail.mit.edu/graphics/rendernet/), Gharbi et al., SIGGRAPH'19
   - [Texture space caching and reconstruction for ray tracing](https://dl.acm.org/citation.cfm?id=2982407), Munkberg et al., Transactions on Graphics 2016
   - [On Filtering the Noise from the Random Parameters in Monte Carlo Rendering](https://dl.acm.org/citation.cfm?id=2167083), Sen and Darabi, SIGGRAPH'12
-1. Oct 1, *Scheduling*:
+1. Oct 1, *Scheduling*: (Towaki Takikawa)
   - [OptiX: A General Purpose Ray Tracing Engine](https://research.nvidia.com/publication/optix-general-purpose-ray-tracing-engine), Parker et al., SIGGRAPH'10
   - [GPU Ray Tracing](https://dl.acm.org/citation.cfm?id=2447976.2447997&coll=portal&dl=ACM), Parker et al., Communications of the ACM 2013
-1. Nov 8, *Traversal*:
+1. Nov 8, *Traversal*: (Matthew Lakier)
   - [Embree: A Kernel Framework for Efficient CPU Ray Tracing](https://dl.acm.org/citation.cfm?doid=2601097.2601199), Wald et al., Transactions on Graphics 2014
-  - [Wide BVH Traversal with a Short Stack](https://www.researchgate.net/publication/333933938_Wide_BVH_Traversal_with_a_Short_Stack), Vaidyanathan et al., HPG'19
-  - [Dual split trees](http://www.cemyuksel.com/research/papers/dualsplittrees_i3d2019.pdf), Lin et al., I3D'19
+  - (Lizhe Chen) [Wide BVH Traversal with a Short Stack](https://www.researchgate.net/publication/333933938_Wide_BVH_Traversal_with_a_Short_Stack), Vaidyanathan et al., HPG'19
+  - (Futian Zhang) [Dual split trees](http://www.cemyuksel.com/research/papers/dualsplittrees_i3d2019.pdf), Lin et al., I3D'19
 1. Nov 15, *Production I*:
-  + [Sony Pictures Imageworks Arnold](https://fpsunflower.github.io/ckulla/data/2018_tog_spi_arnold.pdf), Kulla et al., Transactions on Graphics 2018
+  + (Sina Nabizadeh) [Sony Pictures Imageworks Arnold](https://fpsunflower.github.io/ckulla/data/2018_tog_spi_arnold.pdf), Kulla et al., Transactions on Graphics 2018
   - [The Design and Evolution of Disney's Hyperion Renderer](https://www.yiningkarlli.com/projects/hyperiondesign/hyperiondesign.pdf), Burley et al., Transactions on Graphics 2018
-  - [Arnold: A Brute-Force Production Path Tracer](https://www.arnoldrenderer.com/research/Arnold_TOG2018.pdf), Georgiev et al., Transactions on Graphics 2018
+  - (Saadiya Desai) [Arnold: A Brute-Force Production Path Tracer](https://www.arnoldrenderer.com/research/Arnold_TOG2018.pdf), Georgiev et al., Transactions on Graphics 2018
 1. Nov 22, *Production II*:
   + [Manuka: A batch-shading architecture for spectral path tracing in movie production](https://jo.dreggn.org/home/2018_manuka.pdf), Fascione et al., Transactions on Graphics 2018 
   - [RenderMan: An Advanced Path-Tracing Architecture for Movie Rendering](https://graphics.pixar.com/library/RendermanTog2018/paper.pdf), Christensen et al., Transactions on Graphics 2018 
